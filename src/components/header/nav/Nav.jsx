@@ -10,13 +10,14 @@ a{
 }
 `
 
-function Nav () {
+function Nav ({link}) {
   return (
     <NavStyle>
         <a href="">link1</a>
         <a href="">link2</a>
         <a href="">link3</a>
         <a href="">link4</a>
+        <a href="">{link}</a>
     </NavStyle>
   )
 }

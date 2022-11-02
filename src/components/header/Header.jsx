@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Nav from "./nav/Nav";
 // import Nav from "./nav/Nav";
 
 const HeaderStyle = styled.header`
@@ -9,16 +10,18 @@ const HeaderStyle = styled.header`
   background-color: azure;
 `;
 
-function Header({ titulo,nav }) {
+function Header({ titulo,children,nav }) {
 return (
     <HeaderStyle>
     <h1>{titulo}</h1>    
     {/* opcion 1 importo directamente */}
-    {/* <Nav/> */}
+    <Nav link="componente"/>
     {/* opcion 2 childrenProp */}
+    {/* {children[0]} */}
+    {/* {children[1]} */}
     {/* {children[2]} */}
     {/* opcion 3 RenderProp */}
-    {nav}
+    {/*{nav}*/}
     </HeaderStyle>
   );
 }
