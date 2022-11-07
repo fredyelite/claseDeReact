@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import Header from "./components/header/Header";
 import Main from "./components/main/Main";
+import Header from "./components/header/Header"
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -12,18 +12,20 @@ body,
 #root {
   display: flex;
   flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
   min-height: 100vh;
   width: 100vw;
-  background-color: gray;
-
+  background-color: goldenrod;
 }
 `;
 function App() {
+
   return (
     <>
       <GlobalStyle />
-      <Header />
-      <Main />
+      <Header/>
+      <Main/>
     </>
   );
 }
